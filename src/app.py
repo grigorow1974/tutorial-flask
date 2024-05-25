@@ -21,7 +21,7 @@ def index():
         val7 = 1 if request.form["val7"] == "Yes" else 0
         val8 = 1 if request.form["val8"] == "Yes" else 0
         val9 = 1 if request.form["val9"] == "Yes" else 0
-        val10' = 1 if request.form["val10"] == "Yes" else 0
+        val10 = 1 if request.form["val10"] == "Yes" else 0
         
         
         data = [[val1, val2, val3, val4, val5, val6, val7, val8, val9, val10]]
