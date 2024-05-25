@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 from pickle import load
 
 app = Flask(__name__)
-model = load(open("best_model_random_forest", "rb"))
+model = load(open("best_model_random_forest.model", "rb"))
 class_dict = {
     1: "Adicto",
     0: "No Adicto",
