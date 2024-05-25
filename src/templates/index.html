@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Drug Addiction Prediction</title>
+    <title>Prediccion de Adiccion a las Drogas</title>
 </head>
 <style>
     body {
@@ -41,24 +41,65 @@
     }
 </style>
 <body>
-    <h2>Introduce the values</h2>
+    <h2>Ingresa tus Respuestas (Yes / No)</h2>
     
     <form action="/" method="post">
-        Whether the student has experimented with drugs (Yes/No): <input type="text" name="val1" required><br><br>
-        Indicates if there's a decline in academic performance due to drug use (Yes/No): <input type="text" name="val2" required><br><br>
-        Whether drug use leads to social isolation (Yes/No): <input type="text" name="val3" required><br><br>
-        Indicates if the student faces financial difficulties due to drug use (Yes/No): <input type="text" name="val4" required><br><br>
-        Presence of physical or mental health issues related to drug use (Yes/No): <input type="text" name="val5" required><br><br>
-        Whether there are legal consequences associated with drug use (Yes/No): <input type="text" name="val6" required><br><br>
-        Indicates if drug use strains relationships with others (Yes/No): <input type="text" name="val7" required><br><br>
-        Engagement in risky behavior under the influence of drugs (Yes/No): <input type="text" name="val8" required><br><br>
-        Presence of withdrawal symptoms when trying to quit drug use (Yes/No): <input type="text" name="val9" required><br><br>
-        Indicates denial or resistance to seeking treatment for drug addiction (Yes/No): <input type="text" name="val10" required><br><br>
+        Whether the student has experimented with drugs (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Indicates if there's a decline in academic performance due to drug use (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Whether drug use leads to social isolation (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Indicates if the student faces financial difficulties due to drug use (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Presence of physical or mental health issues related to drug use (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Whether there are legal consequences associated with drug use (Yes/No)
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Indicates if drug use strains relationships with others (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Engagement in risky behavior under the influence of drugs (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Presence of withdrawal symptoms when trying to quit drug use (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        Indicates denial or resistance to seeking treatment for drug addiction (Yes/No):
+        <select name="val1" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+        
         <input type="submit" value="Predict">
     </form>
     
     {% if prediction != None %}
-        <h3>Prediction: {{ prediction }}</h3>
+        <h3>Predicción: {{ prediction }}</h3>
     {% endif %}
 </body>
 </html>
