@@ -44,58 +44,58 @@
     <h2>Ingresa tus Respuestas (Yes / No)</h2>
     
     <form action="/" method="post">
-        Whether the student has experimented with drugs (Yes/No):
+        ¿El estudiante ha experimentado con drogas? (Yes/No):
         <select name="val1" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Indicates if there's a decline in academic performance due to drug use (Yes/No):
-        <select name="val1" required>
+        ¿Indica si hay un declive en el rendimiento académico debido al uso de drogas? e (Yes/No):
+        <select name="val2" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Whether drug use leads to social isolation (Yes/No):
-        <select name="val1" required>
+        ¿El uso de drogas conduce al aislamiento social? (Yes/No):
+        <select name="val3" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Indicates if the student faces financial difficulties due to drug use (Yes/No):
-        <select name="val1" required>
+        ¿Indica si el estudiante enfrenta dificultades financieras debido al uso de drogas? (Yes/No):
+        <select name="val4" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Presence of physical or mental health issues related to drug use (Yes/No):
-        <select name="val1" required>
+        ¿Presencia de problemas de salud física o mental relacionados con el uso de drogas? (Yes/No):
+        <select name="val5" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Whether there are legal consequences associated with drug use (Yes/No)
-        <select name="val1" required>
+        ¿Hay consecuencias legales asociadas con el uso de drogas? (Yes/No)
+        <select name="val6" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Indicates if drug use strains relationships with others (Yes/No):
-        <select name="val1" required>
+        ¿Indica si el uso de drogas tensa las relaciones con otras personas?  (Yes/No):
+        <select name="val7" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Engagement in risky behavior under the influence of drugs (Yes/No):
-        <select name="val1" required>
+        ¿Participa en comportamientos riesgosos bajo la influencia de drogas? (Yes/No):
+        <select name="val8" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Presence of withdrawal symptoms when trying to quit drug use (Yes/No):
-        <select name="val1" required>
+        ¿Presencia de síntomas de abstinencia al intentar dejar el uso de drogas? (Yes/No):
+        <select name="val9" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
-        Indicates denial or resistance to seeking treatment for drug addiction (Yes/No):
-        <select name="val1" required>
+        ¿Indica negación o resistencia a buscar tratamiento para la adicción a las drogas? (Yes/No):
+        <select name="val10" required>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select><br><br>
         
-        <input type="submit" value="Predict">
+        <input type="submit" value="Predecir">
     </form>
     
     {% if prediction != None %}
